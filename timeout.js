@@ -19,3 +19,11 @@ const setIntervalSetting = setInterval(PrintLoading,2000);
 //Her iki saniyede bir yazar.
 
 //clearInterval(setIntervalSetting);
+
+const hour  = setInterval(hourFunction , 1000);
+
+function hourFunction () {
+    const date = new Date();
+    const timeZone = date.toLocaleTimeString();
+    document.body.innerHTML = timeZone;
+}
